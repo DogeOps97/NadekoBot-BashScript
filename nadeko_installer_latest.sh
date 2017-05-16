@@ -66,6 +66,7 @@ then
 else
     rm -rf NadekoBot_old 1>/dev/null 2>&1
     mv -fT NadekoBot NadekoBot_old 1>/dev/null 2>&1
+    rm -rf NadekoBot/NadekoBot
     mv $tempdir/NadekoBot NadekoBot
     cp -f $root/NadekoBot_old/src/NadekoBot/credentials.json $root/NadekoBot/src/NadekoBot/credentials.json 1>/dev/null 2>&1
     echo ""
